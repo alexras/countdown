@@ -11,17 +11,10 @@ pretty than it could be.
 
 ```html
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Test Countdown</title>
-	<meta name="generator" content="TextMate http://macromates.com/">
-	<meta name="author" content="Alexander Rasmussen">
-	<!-- Date: 2010-08-02 -->
 
     <script src="countdown.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -31,14 +24,17 @@ pretty than it could be.
     </script>
 </head>
 <body>
-<p><div id="countbox">
-</div></p>
-<p><div id="countbox2">
-</div></p>
-
+<p><div id="countbox"></div></p>
 <div id="currenttime"></div>
 
 </body>
 </html>
 
 ```
+
+## Known Issues ##
+
+The current time (which is stored by default in the div with id `currenttime`)
+can get out of sync by a little bit with the timers themselves. It doesn't
+bother me enough to fix it currently but if you'd like to submit a patch, go
+right ahead.
